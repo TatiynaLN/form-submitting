@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.min.css">
+</head>
+
+<body>
+
+    <form class="form1" method="post" data-type="date-type-form" data-popup-class="class">
+        <p class="paragraph">1 форма</p>
+        <div class="field-container">
+            <span>Тема обращения</span>
+            <div>
+                <input class="input" name="theme" type="text" data-required="required"
+                    data-message-error="Поле <b>Тема обращения</b> обязательно для заполнения!"
+                    data-class-clear-button="theme">
+            </div>
+        </div>
+        <div class="field-container">
+            <span>Сообщение</span>
+            <div class="textarea-height">
+                <textarea class="textarea" name="message" data-required="required"
+                    data-message-error="Поле <b>Сообщение</b> обязательно для заполнения!"
+                    data-class-clear-button="message"></textarea>
+            </div>
+        </div>
+        <div class="field-container">
+            <select class="select" data-required="required" name="select"
+                data-message-error="Необходимо выбрать хотя бы одну опцию!" multiple>
+                <option value="">-- Select --</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+            </select>
+        </div>
+        <div class="field-container">
+            <label class="field-container--chec">
+                <input class="checkbox" name="checkbox" data-required="required"
+                    data-message-error="Необходимо дать согласие на обработку данных!" type="checkbox" checked>
+                Согласие на обработку данных
+            </label>
+        </div>
+        <button class="btn" type="submit">Отправить</button>
+    </form>
+
+    <form class="form2" method="post" data-type="user-date-form">
+        <p class="paragraph">2 форма</p>
+        <div class="field-container">
+            <span>Имя</span>
+            <div>
+                <input class="input" name="user-name" data-required="required" type="text"
+                    data-class-clear-button="user-name" placeholder="Введите ваше имя">
+            </div>
+        </div>
+        <div class="field-container">
+            <span>Фамилия</span>
+            <div>
+                <input class="input" name="user-surname" data-required="required" type="text"
+                    data-class-clear-button="user-surname" placeholder="Введите вашу фамилию">
+            </div>
+        </div>
+        <div class="field-container">
+            <span>Сообщение</span>
+            <div class="textarea-height">
+                <textarea class="textarea" name="user-message" data-required="required"
+                    data-class-clear-button="user-message"></textarea>
+            </div>
+        </div>
+        <div>
+            <select class="select" name="select">
+                <option value="">-- Select --</option>
+                <option value="option1">Option 1</option>
+                <option value="option2">Option 2</option>
+            </select>
+        </div>
+        <button class="btn" type="submit">Отправить</button>
+    </form>
+
+    <form class="form3" method="post" data-type="user-date-form">
+        <p class="paragraph">3 форма</p>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque maxime
+            doloribus distinctio modi reiciendis culpa facilis. Voluptatem explicabo
+            quod maiores eligendi praesentium harum reiciendis. Eos cumque repudiandae eum nisi odio.
+        </div>
+        <div class="field-container">
+            <label class="field-container--chec">
+                <input class="checkbox" name="checkbox" data-required="required" type="checkbox" checked>
+                Согласен/на.
+            </label>
+        </div>
+        <button class="btn" type="submit">Отправить</button>
+    </form>
+    <script src="main.js" defer></script>
+</body>
+
+</html>
